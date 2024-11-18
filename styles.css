@@ -1,0 +1,12 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: aquamarine;
+    padding: 100px;
+}
+
+nav{
+    display: flex;
+}
