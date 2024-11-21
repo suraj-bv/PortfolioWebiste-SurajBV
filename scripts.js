@@ -1,7 +1,19 @@
-let arr = [92, 24, 67, 98, 89, 65 , 89, 90 ,94]
+let n = prompt('Enter the number: ');
+let arr = []
+for(let i = 1; i <= n; i++ ){
+    arr[i-1] = i
+}
 
-let newArr = arr.filter((val)=>{
-    return val>=90
-})
+console.log(arr)
 
-console.log(newArr)
+let sum = arr.reduce((res, cur)=>{
+    return res + cur
+});
+
+console.log(sum)
+
+let mul = arr.reduce((res, cur)=>{
+    return res * cur
+});
+
+console.log(mul)
