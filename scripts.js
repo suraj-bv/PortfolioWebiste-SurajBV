@@ -1,3 +1,7 @@
-name = prompt('Enter your name:');
+let a = prompt("Enter your name:");
 
-console.log(name)
+n = a.length;
+
+for(let i=0;i<n;i++){
+    console.log(a[i]);
+}
