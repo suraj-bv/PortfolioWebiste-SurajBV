@@ -72,7 +72,7 @@ header {
 
 
 .heading {
-    height: 250px;
+    height: 200px;
     background-color: #4D55CC;
     border-top: 0.5px dashed rgb(212, 209, 209);
     display: flex;
@@ -82,13 +82,13 @@ header {
 
 h1 {
     font-size: 40px;
-    margin: 40px;
+    margin: 35px;
     width: 200px;
     color: white;
 }
 
 p {
-    margin: 40px;
+    margin: 35px;
     font-size: 25px;
 }
 
