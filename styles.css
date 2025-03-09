@@ -1,12 +1,103 @@
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* General Styles */
+body {
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* Prevents content from being hidden under fixed navbar */
 }
 
-header{
-    background-color: aquamarine;
-    padding: 100px;
-}
-
-nav{
+/* Header/Navbar */
+header {
+    background-color: #211C84;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Moves items to the right */
+    padding-right: 20px;
+    z-index: 1000;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap; /* Prevents breaking issues */
+    gap: 15px; /* Reduced gap to prevent overflow */
+    max-width: 100%;
+}
+
+.nav-links a {
+    color: #B5A8D5;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* Mobile Menu Button */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #EFE9D5;
+    cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background-color: #27445D;
+        text-align: right;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+
+.heading {
+    height: 250px;
+    background-color: #4D55CC;
+    border-top: 0.5px dashed rgb(212, 209, 209);
+    display: flex;
+    align-items: center;  /* Aligns the image vertically */
+    padding: 20px;  /* Adds some spacing */
+}
+
+h1 {
+    font-size: 40px;
+    margin: 40px;
+    width: 200px;
+    color: white;
+}
+
+p {
+    margin: 40px;
+    font-size: 25px;
+}
+
+#header-img {
+    align-items: end;
+    height: 200px;
+    width: 250px;
+    background-image: url(img/boy_laptop2\ copy.png);
+    background-size: cover;
+    margin-left: auto; /* Moves only the image to the right */
+    display: block;
 }
